@@ -36,7 +36,7 @@ document.addEventListener("keyup", function(event) {
   
   if (event.keyCode == 17) {
     if (event.keyCode == 187) {
-      e.preventDefault();
+      e.preventDefault(); 
     }
   }
 });
