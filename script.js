@@ -46,3 +46,15 @@ document.addEventListener("keyup", function(event) {
     }
   }
 });
+
+let i = 0;
+rock.addEventListener("click", function(event) {
+  if (i !== 5) {
+    i += 1;
+  }
+  
+  if (i >= 5) {
+    i = 5;
+    rock.style.filter = "drop-shadow(16px 16px 20px red) invert(75%) contrast(200%) brightness(100%)";
+  }
+})
