@@ -5,7 +5,28 @@ let text = document.getElementById("text");
 let lightning = document.getElementById("lightning");
 let rock = document.getElementById("rock");
 
-words = ["Yes", "No", "Sure", "Not really", "42", "Try again...", "Error", "Don't count on it", "You can count on it", "Don't ask ME!?", "Never.", "Don't even think about it", "Good for me!", "YES!", "Absolutely!", "Absolutely... NOT! SIKE", "Probably", "Do YOU think so?", "Ask Wikipedia...", "Never gonna give you up..."];
+answers = [
+  "Yes", 
+  "No", 
+  "Sure", 
+  "Not really", 
+  "42", 
+  "Try again...", 
+  "Error", 
+  "Don't count on it", 
+  "You can count on it", 
+  "Don't ask ME!?", 
+  "Never.", 
+  "Don't even think about it", 
+  "Good for me!", 
+  "YES!", 
+  "Absolutely!", 
+  "Absolutely... NOT! SIKE", 
+  "Probably", 
+  "Do YOU think so?", 
+  "Ask Wikipedia...", 
+  "Never gonna give you up..."
+];
 
 /* --- Functions --- */
 
@@ -17,8 +38,8 @@ function shake() {
 
 function generate() {
   rock.style.animation = "none";
-  let random = Math.floor(Math.random() * words.length);
-  text.innerHTML = words[random];
+  let random = Math.floor(Math.random() * answers.length);
+  text.innerHTML = answers[random];
 }
 
 /* --- Events --- */

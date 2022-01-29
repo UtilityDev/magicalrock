@@ -1,3 +1,10 @@
+:root {
+  --dark-element: black;
+  --light-element: white;
+}
+
+* { color: var(--light-element); }
+body { background-color: var(--dark-element); }
 
 .magic-rock {
   text-align: center;
